@@ -1,0 +1,161 @@
+shapely package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+
+    shapely.algorithms
+    shapely.examples
+    shapely.geometry
+    shapely.speedups
+    shapely.vectorized
+
+Submodules
+----------
+
+shapely.affinity module
+-----------------------
+
+.. automodule:: shapely.affinity
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.coords module
+---------------------
+
+.. automodule:: shapely.coords
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.ctypes_declarations module
+----------------------------------
+
+.. automodule:: shapely.ctypes_declarations
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.ftools module
+---------------------
+
+.. automodule:: shapely.ftools
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.geos module
+-------------------
+
+.. automodule:: shapely.geos
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.impl module
+-------------------
+
+.. automodule:: shapely.impl
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.iterops module
+----------------------
+
+.. automodule:: shapely.iterops
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.libgeos module
+----------------------
+
+.. automodule:: shapely.libgeos
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.linref module
+---------------------
+
+.. automodule:: shapely.linref
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.ops module
+------------------
+
+.. automodule:: shapely.ops
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.predicates module
+-------------------------
+
+.. automodule:: shapely.predicates
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.prepared module
+-----------------------
+
+.. automodule:: shapely.prepared
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.strtree module
+----------------------
+
+.. automodule:: shapely.strtree
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.topology module
+-----------------------
+
+.. automodule:: shapely.topology
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.validation module
+-------------------------
+
+.. automodule:: shapely.validation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.wkb module
+------------------
+
+.. automodule:: shapely.wkb
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+shapely.wkt module
+------------------
+
+.. automodule:: shapely.wkt
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: shapely
+    :members:
+    :undoc-members:
+    :show-inheritance:
