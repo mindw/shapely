@@ -89,7 +89,7 @@ doctest:
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
 apidocs:
-	sphinx-apidoc -f -s txt -o . ../shapely
+	sphinx-apidoc -f -o . ../shapely
 	@echo
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 

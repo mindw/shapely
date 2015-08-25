@@ -22,7 +22,6 @@ sys.path.append(os.path.abspath('sphinxext'))
 sys.path.insert(0, os.path.abspath('..'))
 
 import shapely
-
 # For pyplots in code/, load functions here first, so they are visible
 from shapely import geometry, affinity, wkt, wkb
 from shapely.ops import cascaded_union
@@ -35,8 +34,9 @@ extensions = [
     'matplotlib.sphinxext.only_directives',
     'matplotlib.sphinxext.plot_directive',
     'sphinx.ext.autodoc',
-    #'sphinx.ext.pngmath', # <----- pick one, not both
-    'sphinx.ext.mathjax', # <--/
+    'sphinx.ext.napoleon',
+    'sphinx.ext.pngmath', # <----- pick one, not both
+    #'sphinx.ext.mathjax', # <--/
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -121,7 +121,7 @@ html_theme_path = ['themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "Shapely 1.2 and 1.3 documentation"
+html_title = "Shapely " + version + " documentation"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -176,7 +176,7 @@ html_title = "Shapely 1.2 and 1.3 documentation"
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Shapelydoc'
+# htmlhelp_basename = 'Shapelydoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
