@@ -95,7 +95,7 @@ if not lgeos and geos_config:
     # Now guess the actual library name using a list of possible formats
     if sys.platform == 'win32':
         # Unlikely, since geos-config is a shell script, but you never know...
-        fmts = ['{name}.dll']
+        fmts = ['{name}_c-vc90-mt.dll']
     elif sys.platform == 'darwin':
         fmts = ['lib{name}.dylib', '{name}.dylib', '{name}.framework/{name}']
     elif os.name == 'posix':
@@ -145,7 +145,7 @@ def load_dll(libname, fallbacks=[]):
 
 if sys.platform.startswith('linux'):
     if not lgeos:
-        lgeos = load_dll('geos_c',
+        lgeos = load_dll('geos_c-vc90-mt',
                          fallbacks=['libgeos_c.so.1', 'libgeos_c.so'])
     free = load_dll('c').free
     free.argtypes = [c_void_p]
@@ -185,7 +185,7 @@ elif sys.platform == 'win32':
             original_path = os.environ['PATH']
             os.environ['PATH'] = "%s;%s;%s" % \
                 (egg_dlls, wininst_dlls, original_path)
-            lgeos = CDLL("geos.dll")
+            lgeos = CDLL("geos_c-vc90-mt.dll")
         except (ImportError, WindowsError, OSError):
             raise
 
